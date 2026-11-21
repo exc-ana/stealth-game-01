@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lanternlight — a stealth heist</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #0b0d14;
+        color: #e8ecf5;
+        font-family: Georgia, 'Times New Roman', serif;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        margin: 0 0 4px;
+        font-size: 22px;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        color: #ffd75e;
+      }
+      p.tagline {
+        margin: 0 0 14px;
+        font-size: 13px;
+        font-style: italic;
+        color: #9aa3b8;
+      }
+      canvas {
+        display: block;
+        width: 960px;
+        height: 640px;
+        background: #232733;
+        border: 2px solid #4a4f63;
+        border-radius: 6px;
+        box-shadow: 0 0 60px rgba(255, 179, 71, 0.12);
+        cursor: crosshair;
+      }
+      footer {
+        margin-top: 10px;
+        font-size: 12px;
+        color: #6b7288;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lanternlight</h1>
+    <p class="tagline">A velvet-gloved heist in three galleries — seen never, heard never.</p>
+    <canvas id="game" width="960" height="640"></canvas>
+    <footer>An original game. No network, no files beyond this folder.</footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
